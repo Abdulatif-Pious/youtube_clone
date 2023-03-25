@@ -21,7 +21,7 @@ const Navbar = () => {
           height={45}
         />
       </Link>
-      <Typography variant="h6" sx={{color: grey[500]}}>Abdulatif</Typography>
+
       <SearchBar />
     </Stack>
     

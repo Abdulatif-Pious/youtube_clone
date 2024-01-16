@@ -12,7 +12,7 @@ const Navbar = () => {
     <Stack 
       direction="row"
       p={2}
-      sx={{ alignItems: "center",  justifyContent : "space-between", position: 'sticky', top: 0, backgroundColor: grey[200], zIndex: 10}}
+      sx={{ alignItems: "center",  justifyContent : "space-between", top: 0, position: "sticky", backgroundColor: grey[200], zIndex: 10}}
     >
       <Link to="/">
         <img 
@@ -22,7 +22,7 @@ const Navbar = () => {
         />
       </Link>
 
-      <SearchBar />
+      <SearchBar  />
     </Stack>
     
   )

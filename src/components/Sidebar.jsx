@@ -7,12 +7,16 @@ import { categories } from '../utils/constants';
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   return (
     <Stack
+      className='scrollbar'
       direction='row'
       sx={{ 
-        overflowY : 'auto',
+        overflowX: "hidden", 
+        "&:hover": {
+          overflowX: "auto",
+        },
         flexDirection: {  md: 'column' }, 
-        height: { sx: 'auto', md: '90%' },
-        p: 2,  
+        minHeight: { sx: 'auto', md: '100vh' },
+        p: 2,
       }}
       
     >  
@@ -42,7 +46,16 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
             </Typography>
           </button>    
       ))}
-
+      <Typography
+        variant="body2"
+        sx={{
+          padding: 2,
+          pb: 6,
+          display: { xs: 'none', md: 'block' }
+        }}
+      >
+        Copyright  © Youtube 2023
+      </Typography>
     </Stack>
   )
 }

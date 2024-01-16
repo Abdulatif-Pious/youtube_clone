@@ -13,18 +13,20 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Box sx={{ backgroundColor : grey[100],}}>
+        <Box sx={{ backgroundColor : grey[100], }}  className="scrollbar">
+          {/* NAVBAR */}
           <Navbar />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/channels/:id" element={<ChannelDetail />}  />
-              <Route path="/videos/:id" element={<VideoDetail />} />
-              <Route path="/search/:searchTerm" element={<SearchTerm />} />
-            </Routes>
+
+          {/*MAIN */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/channels/:id" element={<ChannelDetail />}  />
+            <Route path="/videos/:id" element={<VideoDetail />} />
+            <Route path="/search/:searchTerm" element={<SearchTerm />} />
+          </Routes>
         </Box>
       </Router> 
     </ThemeProvider>
-    
   )
 };
 

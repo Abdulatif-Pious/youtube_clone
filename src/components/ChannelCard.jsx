@@ -13,17 +13,20 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
         alignItems: 'center',
         justifyContent: 'center',
         marginTop,
-        
       }}
-
     >
       <CardContent sx={{
-        textAlign: 'center'
+        textAlign: 'center',
+        display: "flex",
+        flexDirection: "column", 
+        justifyContent: "center",
+        alignItems: "center",
+        width: "100%",
       }}>
         <CardMedia 
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={channelDetail?.brandingSettings?.channel?.title}
-          sx={{ width: '180px', height: '180px',  borderRadius: '50%', ml: 3, mb: 5, border: '1px solid #f5199750 '}}
+          sx={{  width: '180px', height: '180px',  borderRadius: '50%',  mb: 5, border: '1px solid #f5199750 '}}
         />
         <Typography
           variant='h5'

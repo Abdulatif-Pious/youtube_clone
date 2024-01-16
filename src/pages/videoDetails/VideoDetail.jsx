@@ -30,7 +30,7 @@ const VideoDetail = () => {
     <Box minHeight='95vh'>
       <Stack direction={{ xs: 'column', md: 'row' }}>
         
-        <Box flex={1}>
+        <Box flex={1}  position='sticky'>
           <Box sx={{ width: '100%', position: 'sticky', top: '86px' }}>
             <ReactPlayer  url={`https://youtube.com/watch?v=${id}`} className="react-player" controls/>
             <Typography variant="h4" p={2}>
@@ -46,6 +46,7 @@ const VideoDetail = () => {
                   variant='h6'
                   p={2}
                   color={grey[600]}
+                  sx={{ display: "flex", alignItems: "center" }}
                 >
                   {channelTitle}
                   <CheckCircleIcon sx={{ color: "#f51997", ml: '5px', fontSize: '16px' }} />

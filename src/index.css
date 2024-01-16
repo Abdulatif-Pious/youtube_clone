@@ -10,6 +10,60 @@ a {
   text-decoration: none;
 }
 
+                        /*  CHROME AND SAFARI */
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 30px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #777;
+}
+
+                        /*FIREFOX */
+.scrollbar::-moz-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-moz-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 30px;
+}
+
+.scrollbar::-moz-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.scrollbar::-moz-scrollbar-thumb:active {
+  background-color: #777;
+}
+
+                        /* MICROSOFT EDGE */
+.scrollbar::-ms-scrollbar {
+  width: 10px;
+}
+
+.scrollbar::-ms-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 30px;
+}            
+
+.scrollbar::-ms-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.scrollbar::-ms-scrollbar-thumb:active {
+  background-color: #777;
+}
+
 .category-btn {
   border: none; 
   background-color: white; 
@@ -35,3 +89,5 @@ a {
   height: 77vh !important;
   width: 100% !important;
 }
+
+

@@ -16,21 +16,15 @@ const Home = () => {
   }, [selectedCategory]);
 
   return (
-    <Stack sx={{ flexDirection: { sx : 'column', md : 'row'}, overflowY: 'hidden' }}>
-      <Box sx={{ height : { sx : 'auto', md : '100vh' }, minWidth: '250px', overflowY: 'hidden', borderRight: "1px solid #bdbdbd", backgroundColor: 'white'}}>
+    <Stack  sx={{ flexDirection: { sx : 'column', md : 'row',}}}>
+      <Box 
+        className="scrollbar"
+        sx={{ minHeight : { xs : 'auto', md : '100vh' },  overflowY: "hidden", "&:hover": { overflowY: "auto" }, position: { md: "fixed" }, top: 0, bottom: 0, minWidth: '300px',  borderRight: "1px solid #bdbdbd50", backgroundColor: 'white'}}
+      >
         <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
-
-        <Typography
-          variant="body2"
-          sx={{
-            padding: 2,
-            display: { xs: 'none', md: 'block' }
-          }}
-        >
-          Copyright  © Abdulatif 2023
-        </Typography>
       </Box>
-      <Box p={4} sx={{ overflowX: 'auto', height: '90vh' }}>
+
+      <Box  p={4} sx={{ minHeight: '100vh', pl: { md: "300px" }}}>
         <Typography
           variant="h4"
           fontWeight="bold"

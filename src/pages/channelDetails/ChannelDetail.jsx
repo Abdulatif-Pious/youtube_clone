@@ -22,6 +22,7 @@ const ChanneDetail = () => {
   return (
     <Box sx={{
       width: '100%',
+      minHeight: "100vh",
     }}>
       <div style={{
         height: '300px',

@@ -4,7 +4,7 @@ const Loader = () => {
   
   return (
     <Box minHeight="95vh">
-      <Stack direction='row' alignItems="center" justifyContent='center' height='80vh'>
+      <Stack direction='row' sx={{ minWidth: "100vw" }} alignItems="center" justifyContent='center' height='100vh'>
         <CircularProgress />
       </Stack>
     </Box>
